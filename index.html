@@ -134,7 +134,7 @@ background-color: #FFF2C9; /* grigio più marcato */
         <div class="output-section">
             <p class="instructions">Risultati:</p>
             <div class="output-container" id="outputArea"></div>
-            <div class="totals" id="totals">Totali: Pulcini — Vecchi — ?Boh</div>
+            <div class="totals" id="totals">Totali: New    — Old    — ?Boh</div>
         </div>
     </main>
     <script>
@@ -188,7 +188,7 @@ background-color: #FFF2C9; /* grigio più marcato */
                     <div class="result-item">
                         <img class="clown-img" src="${imgSrc}" alt="${name}" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2290%22 height=%2290%22 viewBox=%220 0 90 90%22%3E%3Crect width=%2290%22 height=%2290%22 fill=%22%23ddd%22/%3E%3Ctext x=%2245%22 y=%2250%22 font-family=%22Arial%22 font-size=%2212%22 text-anchor=%22middle%22 fill=%22%23888%22%3E${name.substring(0,8)}%3C/text%3E%3C/svg%3E';">
                         <div class="clown-name" style="color:${statusColor};">${name}</div>
-                        <div class="clown-status" style="color:${statusColor};">${status === "P" ? "Pulcino" : status === "V" ? "Vecchio" : "?Boh"}</div>
+                        <div class="clown-status" style="color:${statusColor};">${status === "P" ? "New" : status === "V" ? "Old" : "?Boh"}</div>
                     </div>
                 `;
                 if (status === "P") totalP++;
@@ -206,6 +206,7 @@ background-color: #FFF2C9; /* grigio più marcato */
     </script>
 </body>
 </html>
+
 
 
 
