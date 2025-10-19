@@ -76,14 +76,16 @@
             width: 110px;
             text-align: center;
         }
-        .clown-img {
-            width: 120px;
-            height: 120px;
- object-fit: contain;
-            border: 1px solid #aaa;
-            border-radius: 4px;
-            margin-bottom: 6px;
-        }
+.clown-img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    object-position: center;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    margin-bottom: 6px;
+    background-color: #f5f5f5; /* opzionale */
+}
         .clown-name {
             font-weight: bold;
             margin-bottom: 4px;
@@ -125,8 +127,8 @@
     </header>
     <main>
         <div class="input-section">
-            <p class="instructions">Incolla qui i nomi dei clown (uno per riga) presi dalla pagina dei turni:</p>
-            <textarea id="inputArea" placeholder="Es: Musha&#10;Virgola&#10;Arancia..."></textarea>
+            <p class="instructions">Incolla qui i nomi dei clown (uno per riga) copiati dalla pagina dei turni:</p>
+            <textarea id="inputArea" placeholder="Es: Musha&#10;Estrella&#10;Arancia..."></textarea>
             <button onclick="checkNames()">Controlla Nomi</button>
         </div>
         <div class="output-section">
@@ -204,4 +206,5 @@
     </script>
 </body>
 </html>
+
 
